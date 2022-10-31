@@ -1,0 +1,215 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #8c9491;
+}
+i {
+  font-style: normal;
+}
+ul li {
+  list-style: none;
+  cursor: pointer;
+}
+/* navbar css  */
+h1 {
+  color: orange;
+}
+.navbar.bg-secondary {
+  background-color: #484848 !important;
+}
+.fa-calendar-alt:before,
+.fa-calendar-days:before,
+.fa-list-check:before,
+.fa-tasks:before {
+  padding-right: 0.2rem;
+}
+.nav-link {
+  margin-right: 1rem;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  border-bottom: 0.1rem dashed #fff;
+}
+/* form css  */
+
+.form-control:focus {
+  border: 0;
+  box-shadow: 0 0 0 0.2rem rgba(72, 72, 72, 0.6);
+}
+.custom-select:focus {
+  border: 0;
+  box-shadow: 0 0 0 0.2rem rgba(72, 72, 72, 0.6);
+}
+#newTask h2,
+#taskListDashboard h2 {
+  color: orange;
+  border-bottom: 0.3rem dashed orange;
+  width: 30%;
+  padding: 0.5em 1em 0.5rem 0;
+  margin-bottom: 5rem;
+}
+#taskListDashboard h2 {
+  width: 50%;
+}
+form {
+  padding-top: 8rem;
+  padding-bottom: 2.5rem;
+  background-color: #93a7aa;
+}
+#newTask label i {
+  padding-right: 0.3rem;
+}
+.form-control {
+  width: 60%;
+}
+.alertMess p {
+  height: auto;
+  color: orange;
+  border-radius: 0.2rem;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(100, 0, 0, 0.5);
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.2rem;
+  background-color: white;
+  margin-top: 1.5rem;
+}
+.alertMess i {
+  padding-right: 1rem;
+  color: orange;
+}
+.btn-primary {
+  margin-top: 2rem;
+  padding: 0.5rem 3rem;
+  background-color: orange !important;
+  border: none !important;
+  box-shadow: 0.2rem 0.3rem 1rem rgba(98, 99, 99);
+}
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(72, 72, 72, 0.6) !important;
+  color: rgb(72, 72, 72);
+}
+/* Dashboard CSS  */
+.inProgress,
+.done {
+  display: none;
+}
+#taskListDashboard {
+  margin-top: 5rem;
+  width: 70%;
+}
+.contentWindow {
+  overflow: auto;
+  border: 0.1rem solid orange;
+  border-top: 0;
+  height: 30rem;
+  padding-top: 15px;
+  margin-bottom: 5rem;
+  background-color: #eee;
+}
+.contentWindow ul li {
+  margin: 0;
+  margin-bottom: 0.9rem;
+  background-color: #fff;
+  box-shadow: 0.3rem 0.3rem 0.4rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+.statusTab {
+  margin-bottom: 0;
+}
+.statusTab li {
+  border: 0.1rem solid orange;
+  border-radius: 1rem 1rem 0 0;
+  height: 2.5rem;
+  justify-content: center;
+  text-align: center;
+  line-height: 2.5rem;
+  color: white;
+  background-color: rgb(97, 97, 97);
+}
+.statusTab li.unshown {
+  border: 0.1rem solid orange;
+  color: white;
+  background-color: rgb(97, 97, 97);
+}
+.statusTab li.active {
+  border-bottom: 0;
+  background-color: #eee;
+  font-weight: bold;
+  color: #000000;
+}
+.statusTab li i {
+  padding-right: 0.3rem;
+}
+.cardAdded button {
+  margin: 0.3rem 0.1rem;
+}
+.cardAdded,
+.message {
+  border-radius: 0.6rem;
+  width: 100%;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.message {
+  display: flex;
+  height: 100%;
+}
+.message i {
+  padding-right: 0.3rem;
+  color: orange;
+}
+.btn.btn-warning {
+  color: #fff;
+}
+
+@media screen and (max-width: 1188px) {
+  #taskListDashboard h2 {
+    width: 100%;
+  }
+  #newTask h2 {
+    width: 68%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-link {
+    width: 40%;
+  }
+  .navbar-dark .navbar-nav .nav-link.active {
+    border-bottom: 0.2rem solid #fff;
+  }
+  #newTask h2,
+  #taskListDashboard h2 {
+    border-bottom: 0.3rem solid orange;
+  }
+}
+@media screen and (max-width: 828px) {
+  .cardAdded button {
+    margin: 0.1rem 0.1rem;
+  }
+  .cardAdded button span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .statusTab li span {
+    display: none;
+  }
+}
+@media screen and (max-width: 619px) {
+  #newTask h2,
+  #taskListDashboard h2 {
+    font-size: 1.5rem;
+  }
+  .btn-primary {
+    margin-top: 3rem;
+    margin-left: 13rem;
+  }
+}
