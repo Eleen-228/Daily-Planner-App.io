@@ -1,4 +1,4 @@
-# Daily Planner Project (Generation USA Bootcamp Final Project)
+# Daily Planner Website (Generation USA Bootcamp Final Project)
 
 A project to build a simple planner for our daily life.
 
