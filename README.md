@@ -1,4 +1,4 @@
-# Daily Planner Website (Generation USA Bootcamp Final Project)
+# [Daily Planner Website](https://eleen-228.github.io/Daily-Planner-App.io/) (Generation USA Bootcamp Final Project)
 
 A project to build a simple planner for our daily life.
 
